@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my form practice</title>
+	<style>
+		input {
+			margin-top: 2px;
+			margin-bottom: 8px;
+			border: 2px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+			background-color: whitesmoke;
+			color: black;
+			padding: 12px 20px;
+			
+		}
+		input:focus {
+			background-color: white;
+			border: 3px solid #555;
+		}
+		#ln {
+			padding-right: 6px;
+		}
+		#em {
+			padding-right: 45px;
+		}
+		body {
+			margin-left: 30%;
+			margin-top: 50px;
+			background-color: gray;
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<h1>STUDENT APPLICATION FORM</h1>
+	<form>
+		<label for="firstname">FIRST NAME:</label>
+		<input type="text" name="firstname" placeholder="E.g Kwameh" size="30" required>
+		<br>
+		<label for="lastname" id="ln">LAST NAME:</label>
+		<input type="text" name="lastname" placeholder="E.g Nkrumah" size="30" required>
+		<br>
+		<label for="email" id="em">EMAIL:</label>
+		<input type="email" name="email" placeholder="E.g Nkrumah@gmail.com" size="30" required>
+		<br>
+		<label for="phone">PHONE NUM:</label>
+		<input type="tel" name="phone" placeholder="E.g +23350998765" size="30" required>
+		<br>
+		<label for="gender">GENDER:</label>
+		<input type="radio" name="gender" value="MALE">Male
+		<input type="radio" name="gender" value="FEMALE">Female
+		<input type="radio" name="gender" value="OTHER">Other
+	</form>
+
+</body>
+</html>
